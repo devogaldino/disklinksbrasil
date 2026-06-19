@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>disklinksbrasil | Meus Links</title>
+    <style>
+        /* Reset e Variáveis de Cores Modernas */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1c1c1e;
+            --card-hover: #2c2c2e;
+            --text-main: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent-color: #007aff;
+            --price-color: #30d158;
+            --border-radius: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: block;
+        }
+
+        /* Container Principal centralizado no estilo Beacons */
+        .container {
+            max-width: 580px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Header do Perfil */
+        .profile-header {
+            margin-bottom: 32px;
+        }
+
+        .profile-avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--card-bg);
+            background-color: var(--card-bg);
+            margin-bottom: 16px;
+        }
+
+        .profile-name {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+        }
+
+        /* Redes Sociais */
+        .social-icons {
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .social-icon:hover {
+            color: var(--text-main);
+        }
+
+        /* Container de Links (Estilo Grid de Cards / Feed) */
+        .links-feed {
+            display: block;
+        }
+
+        /* Card individual baseado no Beacons com imagem quadrada na esquerda */
+        .link-card {
+            display: table;
+            width: 100%;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            background-color: var(--card-hover);
+        }
+
+        .card-row {
+            display: table-row;
+        }
+
+        .card-img-cell {
+            display: table-cell;
+            width: 110px;
+            vertical-align: middle;
+            padding: 12px 0 12px 12px;
+        }
+
+        .card-image {
+            width: 110px;
+            height: 110px;
+            border-radius: 12px;
+            object-fit: cover;
+            background-color: #2c2c2e;
+            display: block;
+        }
+
+        .card-info-cell {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 16px 20px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+
+        .card-price {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--price-color);
+            margin-bottom: 8px;
+        }
+
+        .card-action {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+
+        /* Rodapé sutil */
+        .footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="profile-header">
+            <img class="profile-avatar" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&auto=format&fit=crop&q=80" alt="disklinksbrasil Logo">
+            <h1 class="profile-name">disklinksbrasil</h1>
+        </header>
+
+        <div class="social-icons">
+            <a href="https://instagram.com/seu_usuario" target="_blank" class="social-icon">Instagram</a>
+            <a href="https://tiktok.com/@seu_usuario" target="_blank" class="social-icon">TikTok</a>
+            <a href="https://wa.me/seunumero" target="_blank" class="social-icon">WhatsApp</a>
+        </div>
+
+        <main class="links-feed">
+
+            <a href="https://shope.ee/exemplo1" target="_blank" class="link-card">
+                <div class="card-row">
+                    <div class="card-img-cell">
+                        <img class="card-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&auto=format&fit=crop&q=80" alt="Produto 1">
+                    </div>
+                    <div class="card-info-cell">
+                        <div class="card-title">Tênis Esportivo Alta Performance Pro Max Flex</div>
+                        <div class="card-price">R$ 189,90</div>
+                        <div class="card-action">Ver no site →</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://mercadolivre.com/exemplo2" target="_blank" class="link-card">
+                <div class="card-row">
+                    <div class="card-img-cell">
+                        <img class="card-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop&q=80" alt="Produto 2">
+                    </div>
+                    <div class="card-info-cell">
+                        <div class="card-title">Fone de Ouvido Bluetooth Anti-Ruído Pro Ultra</div>
+                        <div class="card-price">R$ 97,50</div>
+                        <div class="card-action">Ver no site →</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://amazon.com.br/exemplo3" target="_blank" class="link-card">
+                <div class="card-row">
+                    <div class="card-img-cell">
+                        <img class="card-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&auto=format&fit=crop&q=80" alt="Produto 3">
+                    </div>
+                    <div class="card-info-cell">
+                        <div class="card-title">Relógio Minimalista Smart Dark Edition</div>
+                        <div class="card-price">R$ 149,90</div>
+                        <div class="card-action">Ver no site →</div>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 disklinksbrasil. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
